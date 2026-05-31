@@ -1,2 +1,3 @@
 # driving-mode-interface
-Created with CodeSandbox
+
+"Driving Mode" vehicle interface to reduce visual distraction
