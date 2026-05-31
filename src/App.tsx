@@ -1326,7 +1326,7 @@ const modeLabelShort = (m) => (m === 1 ? "DEF" : m === 2 ? "FOG" : "OFF");
 const modeLabelColor = (m) =>
   m === 1 ? "#ff4a4a" : m === 2 ? ACCENT : TEXT_SEC;
 
-const TBOX = {
+const TBOX: React.CSSProperties = {
   background: "rgba(10,14,24,0.78)",
   border: "1px solid rgba(74,159,255,0.35)",
   borderRadius: 10,
@@ -1335,7 +1335,7 @@ const TBOX = {
   flexDirection: "column",
   pointerEvents: "auto",
 };
-const THEAD = {
+const THEAD: React.CSSProperties = {
   fontFamily: "'Exo 2',sans-serif",
   fontWeight: 700,
   fontSize: 11,
@@ -1344,7 +1344,7 @@ const THEAD = {
   textTransform: "uppercase",
   marginBottom: 6,
 };
-const TBODY = {
+const TBODY: React.CSSProperties = {
   fontFamily: "'Poppins',sans-serif",
   fontWeight: 400,
   fontSize: 11.5,
