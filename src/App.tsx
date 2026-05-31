@@ -234,7 +234,7 @@ function ADn({ s = 18 }) {
   );
 }
 
-function IconBtn({ active, glowColor, triggerRef, pulseScale, children }) {
+function IconBtn({ active, glowColor = ACCENT, triggerRef, pulseScale = 1.03, children }) {
   const [scale, setScale] = useState(1);
   const timerRef = useRef(null);
   const c = glowColor || ACCENT;
