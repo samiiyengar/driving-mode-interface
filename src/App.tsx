@@ -367,7 +367,7 @@ function VertSlider({ value, onChange, min, max, step, height = 140, active }) {
   const onPD = (e) => {
     e.preventDefault();
     onChange(getV(e.clientY));
-    const mv = (ev) => onChange(getV(ev.clientY));
+    const mv = (ev: PointerEvent) => onChange(getV(ev.clientY));
     const up = () => {
       window.removeEventListener("pointermove", mv);
       window.removeEventListener("pointerup", up);
@@ -439,7 +439,7 @@ function StepSlider({ steps, labels, value, onChange, height = 140, active }) {
   const onPD = (e) => {
     e.preventDefault();
     onChange(getS(e.clientY));
-    const mv = (ev) => onChange(getS(ev.clientY));
+    const mv = (ev: PointerEvent) => onChange(getS(ev.clientY));
     const up = () => {
       window.removeEventListener("pointermove", mv);
       window.removeEventListener("pointerup", up);
@@ -555,7 +555,7 @@ function TempTrack({ value, onChange, active }) {
   const onPD = (e) => {
     e.preventDefault();
     onChange(getV(e.clientY));
-    const mv = (ev) => onChange(getV(ev.clientY));
+    const mv = (ev: PointerEvent) => onChange(getV(ev.clientY));
     const up = () => {
       window.removeEventListener("pointermove", mv);
       window.removeEventListener("pointerup", up);
@@ -2193,7 +2193,7 @@ function CarInterior({ swContent, ccContent }) {
           objectPosition: "top",
         }}
         alt=""
-        onError={(e) => (e.target.style.display = "none")}
+        onError={(e) => ((e.target as HTMLImageElement).style.display = "none")}
       />
       <div
         style={{
