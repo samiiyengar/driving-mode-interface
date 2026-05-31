@@ -1732,7 +1732,7 @@ function Tutorial({
     return rect;
   }
 
-  const overlay = {
+  const overlay: React.CSSProperties = {
     position: "absolute",
     inset: 0,
     zIndex: 200,
