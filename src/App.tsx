@@ -315,7 +315,7 @@ function TickMark({ p, pct }) {
     />
   );
 }
-function Track({ pct, height, marks, trackRef, onPointerDown, active }) {
+function Track({ pct, height, marks = [], trackRef, onPointerDown, active }) {
   return (
     <div
       ref={trackRef}
