@@ -1354,21 +1354,21 @@ const TBODY: React.CSSProperties = {
 const BZ = "rgba(74,159,255,0.13)";
 const BD = "1px dashed rgba(74,159,255,0.4)";
 const BS = "1px solid rgba(74,159,255,0.2)";
-const ZL = {
+const ZL: React.CSSProperties = {
   fontFamily: "'Exo 2',sans-serif",
   fontSize: 8,
   fontWeight: 700,
   color: ACCENT,
   letterSpacing: 1,
 };
-const ZLS = {
+const ZLS: React.CSSProperties = {
   fontFamily: "'Exo 2',sans-serif",
   fontSize: 7,
   fontWeight: 700,
   color: ACCENT,
   letterSpacing: 0.8,
 };
-const togglePill = {
+const togglePill: React.CSSProperties = {
   background: "rgba(10,14,24,0.72)",
   border: "1px solid rgba(74,159,255,0.35)",
   borderRadius: 8,
@@ -1738,7 +1738,7 @@ function Tutorial({
     zIndex: 200,
     pointerEvents: "none",
   };
-  const navBar = {
+  const navBar: React.CSSProperties = {
     position: "fixed",
     bottom: 24,
     left: "50%",
@@ -1756,7 +1756,7 @@ function Tutorial({
     opacity: exiting ? 0 : navVisible ? 1 : 0,
     transition: exiting ? "opacity 0.2s ease-in" : "opacity 0.22s ease-out",
   };
-  const navBtn = {
+  const navBtn: React.CSSProperties = {
     background: "none",
     border: "1px solid rgba(74,159,255,0.4)",
     color: ACCENT,
@@ -2500,7 +2500,7 @@ export default function App() {
       : null,
   ].filter(Boolean);
 
-  const bs = {
+  const bs: React.CSSProperties = {
     background: BLOCK_BG,
     borderRadius: 12,
     display: "flex",
