@@ -18,7 +18,7 @@ const AUTO_WIPER = 2;
 const TRACK_GLOW = "0 0 8px 2px rgba(74,159,255,0.6)";
 const PLAIN_SHADOW =
   "0 2px 4px rgba(0,0,0,0.8), inset 0 1px 2px rgba(255,255,255,0.15), inset 0 -1px 2px rgba(0,0,0,0.6)";
-const THUMB_BASE = {
+const THUMB_BASE: React.CSSProperties = {
   position: "absolute",
   left: "50%",
   transform: "translate(-50%,50%)",
