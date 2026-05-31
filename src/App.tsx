@@ -1420,7 +1420,7 @@ function TapZoneOverlay({ gridRef, layoutRef }) {
           row = Math.floor(i / 3),
           x = 8 + col * (BW + 8),
           y = 8 + row * (BH + 8);
-        const wrap = {
+        const wrap: React.CSSProperties = {
           position: "absolute",
           left: x * scale,
           top: y * scale,
