@@ -1755,7 +1755,7 @@ function Tutorial({
     boxShadow: "0 4px 24px rgba(0,0,0,0.6)",
     opacity: exiting ? 0 : navVisible ? 1 : 0,
     transition: exiting ? "opacity 0.2s ease-in" : "opacity 0.22s ease-out",
-  };
+};
   const navBtn: React.CSSProperties = {
     background: "none",
     border: "1px solid rgba(74,159,255,0.4)",
