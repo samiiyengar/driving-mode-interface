@@ -2181,6 +2181,26 @@ function CarInterior({ swContent, ccContent }) {
         background: "transparent",
       }}
     >
+      <div
+        style={{
+          position: "absolute",
+          bottom: 10,
+          left: 14,
+          zIndex: 10,
+          pointerEvents: "none",
+        }}
+      >
+        <span
+          style={{
+            fontFamily: "'Exo 2',sans-serif",
+            fontSize: 14,
+            color: "rgba(255,255,255,0.45)",
+            letterSpacing: 0.5,
+          }}
+        >
+          Best viewed at 100% zoom in a full browser window
+        </span>
+      </div>
       <img
         src={IMG_URL}
         style={{
