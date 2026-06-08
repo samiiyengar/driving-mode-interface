@@ -2157,7 +2157,7 @@ function Tutorial({
 
 const IMG_URL = carInterior;
 const SW_IMG_LEFT = 163,
-  SW_IMG_TOP = 105,
+  SW_IMG_TOP = 107,
   SW_IMG_W = 486,
   SW_IMG_H = 242;
 const CC_IMG_LEFT = 799,
